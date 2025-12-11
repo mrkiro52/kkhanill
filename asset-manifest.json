@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kkhanill/static/css/main.0985a497.css",
+    "main.js": "/kkhanill/static/js/main.b5bcce38.js",
+    "static/media/travel.jpg": "/kkhanill/static/media/travel.aa679425b6ed5ed8e025.jpg",
+    "static/media/Unbounded-Bold.ttf": "/kkhanill/static/media/Unbounded-Bold.16acd5944000ba4b2140.ttf",
+    "static/media/Unbounded-Light.ttf": "/kkhanill/static/media/Unbounded-Light.e3a3b80220c351c823ee.ttf",
+    "static/media/Unbounded-Regular.ttf": "/kkhanill/static/media/Unbounded-Regular.d2a446434fd598e4bb22.ttf",
+    "static/media/money.jpg": "/kkhanill/static/media/money.dd197280eb5cdcb49615.jpg",
+    "static/media/help.jpg": "/kkhanill/static/media/help.63c60dd7492a89de53a8.jpg",
+    "static/media/world.jpg": "/kkhanill/static/media/world.2e0d05af9c765daef485.jpg",
+    "static/media/me.jpg": "/kkhanill/static/media/me.cbe5e32a45d4663d66ed.jpg",
+    "static/media/phones.jpg": "/kkhanill/static/media/phones.cb2930b76deaed4fb07f.jpg",
+    "index.html": "/kkhanill/index.html",
+    "main.0985a497.css.map": "/kkhanill/static/css/main.0985a497.css.map",
+    "main.b5bcce38.js.map": "/kkhanill/static/js/main.b5bcce38.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0985a497.css",
+    "static/js/main.b5bcce38.js"
+  ]
+}
