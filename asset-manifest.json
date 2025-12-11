@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kkhanill/static/css/main.5164008c.css",
-    "main.js": "/kkhanill/static/js/main.1679f804.js",
+    "main.js": "/kkhanill/static/js/main.bd557f72.js",
     "static/media/travel.jpg": "/kkhanill/static/media/travel.aa679425b6ed5ed8e025.jpg",
     "static/media/Unbounded-Bold.ttf": "/kkhanill/static/media/Unbounded-Bold.16acd5944000ba4b2140.ttf",
     "static/media/Unbounded-Light.ttf": "/kkhanill/static/media/Unbounded-Light.e3a3b80220c351c823ee.ttf",
@@ -13,10 +13,10 @@
     "static/media/phones.jpg": "/kkhanill/static/media/phones.cb2930b76deaed4fb07f.jpg",
     "index.html": "/kkhanill/index.html",
     "main.5164008c.css.map": "/kkhanill/static/css/main.5164008c.css.map",
-    "main.1679f804.js.map": "/kkhanill/static/js/main.1679f804.js.map"
+    "main.bd557f72.js.map": "/kkhanill/static/js/main.bd557f72.js.map"
   },
   "entrypoints": [
     "static/css/main.5164008c.css",
-    "static/js/main.1679f804.js"
+    "static/js/main.bd557f72.js"
   ]
 }
