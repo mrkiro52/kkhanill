@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kkhanill/static/css/main.0985a497.css",
-    "main.js": "/kkhanill/static/js/main.7d90c7ba.js",
+    "main.css": "/kkhanill/static/css/main.5164008c.css",
+    "main.js": "/kkhanill/static/js/main.9675afb7.js",
     "static/media/travel.jpg": "/kkhanill/static/media/travel.aa679425b6ed5ed8e025.jpg",
     "static/media/Unbounded-Bold.ttf": "/kkhanill/static/media/Unbounded-Bold.16acd5944000ba4b2140.ttf",
     "static/media/Unbounded-Light.ttf": "/kkhanill/static/media/Unbounded-Light.e3a3b80220c351c823ee.ttf",
@@ -12,11 +12,11 @@
     "static/media/me.jpg": "/kkhanill/static/media/me.cbe5e32a45d4663d66ed.jpg",
     "static/media/phones.jpg": "/kkhanill/static/media/phones.cb2930b76deaed4fb07f.jpg",
     "index.html": "/kkhanill/index.html",
-    "main.0985a497.css.map": "/kkhanill/static/css/main.0985a497.css.map",
-    "main.7d90c7ba.js.map": "/kkhanill/static/js/main.7d90c7ba.js.map"
+    "main.5164008c.css.map": "/kkhanill/static/css/main.5164008c.css.map",
+    "main.9675afb7.js.map": "/kkhanill/static/js/main.9675afb7.js.map"
   },
   "entrypoints": [
-    "static/css/main.0985a497.css",
-    "static/js/main.7d90c7ba.js"
+    "static/css/main.5164008c.css",
+    "static/js/main.9675afb7.js"
   ]
 }
