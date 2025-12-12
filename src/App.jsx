@@ -11,7 +11,7 @@ import './fonts.css';
 export default function App() {
   return (
     <HashRouter>
-      <Routes>
+      <Routes> 
         <Route path="/" element={<Home />} />
         <Route path="/course" element={<CourseContent />} />
         <Route path="/presale" element={<Presale />} />
