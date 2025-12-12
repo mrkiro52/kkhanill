@@ -66,7 +66,7 @@ export default function OrderForm({ isOpen, onClose }) {
       console.log('   FailURL:', failUrl);
       
       // Отправляем данные на наш бэкенд для инициирования платежа
-      const response = await fetch('https://kkhanill-backend.vercel.app/api/create-payment', {
+      const response = await fetch('https://express-kkhanill.vercel.app/api/tbank/init-payment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -74,12 +74,6 @@ export default function OrderForm({ isOpen, onClose }) {
         body: JSON.stringify({
           amount: amount,
           orderId: orderId,
-          description: 'Курс "Как начать работать на себя в IT"',
-          phone: formData.phone,
-          email: formData.email,
-          name: formData.name,
-          successUrl: successUrl,
-          failUrl: failUrl,
         })
       });
 
@@ -89,6 +83,9 @@ export default function OrderForm({ isOpen, onClose }) {
       if (result.Success && result.PaymentURL) {
         console.log('🚀 Перенаправляем на платеж:', result.PaymentURL);
         // Перенаправляем на форму оплаты ТБанк
+        window.location.href = result.PaymentURL;
+      } else if (result.PaymentURL) {
+        console.log('🚀 Перенаправляем на платеж:', result.PaymentURL);
         window.location.href = result.PaymentURL;
       } else {
         console.error('❌ Ошибка при инициировании платежа:', result);
