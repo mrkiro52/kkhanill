@@ -1,0 +1,115 @@
+.video-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  padding: 20px;
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.3s ease-in-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.video-modal-container {
+  background: #1a1a1a;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 20px 100px rgba(0, 0, 0, 0.4);
+  position: relative;
+  animation: slideUp 0.4s ease-out;
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    border-radius: 12px;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 200, 0, 0.9);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #1a1a1a;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  z-index: 10;
+
+  &:hover {
+    background: #ffc800;
+    transform: rotate(90deg);
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  background: #000;
+  padding-top: 56.25%; // 16:9 aspect ratio
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video-info {
+  padding: 30px;
+  background: #1a1a1a;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  p {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

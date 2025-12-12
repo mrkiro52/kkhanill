@@ -1,0 +1,130 @@
+.countdown-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  margin: 24px 0;
+  background: linear-gradient(135deg, rgba(255, 200, 0, 0.05) 0%, rgba(255, 200, 0, 0.02) 100%);
+  border: 1px solid rgba(255, 200, 0, 0.2);
+  border-radius: 12px;
+
+  .countdown-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .countdown-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'Courier New', monospace;
+
+    .countdown-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+
+      .countdown-number {
+        font-size: 32px;
+        font-weight: bold;
+        color: #ffc800;
+        min-width: 70px;
+        text-align: center;
+        line-height: 1;
+      }
+
+      .countdown-label-unit {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        min-width: 70px;
+        text-align: center;
+      }
+    }
+
+    .countdown-separator {
+      font-size: 28px;
+      color: rgba(255, 200, 0, 0.4);
+      margin: 0 2px;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+// Адаптивность для планшетов
+@media (max-width: 768px) {
+  .countdown-timer {
+    padding: 16px;
+    margin: 20px 0;
+
+    .countdown-display {
+      gap: 4px;
+
+      .countdown-unit {
+        gap: 2px;
+
+        .countdown-number {
+          font-size: 24px;
+          min-width: 55px;
+        }
+
+        .countdown-label-unit {
+          font-size: 10px;
+          min-width: 55px;
+        }
+      }
+
+      .countdown-separator {
+        font-size: 20px;
+        padding-bottom: 6px;
+      }
+    }
+  }
+}
+
+// Адаптивность для мобильных
+@media (max-width: 480px) {
+  .countdown-timer {
+    padding: 12px;
+    gap: 8px;
+
+    .countdown-label {
+      font-size: 12px;
+    }
+
+    .countdown-display {
+      gap: 2px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .countdown-unit {
+        gap: 1px;
+
+        .countdown-number {
+          font-size: 18px;
+          min-width: 45px;
+        }
+
+        .countdown-label-unit {
+          font-size: 9px;
+          min-width: 45px;
+        }
+      }
+
+      .countdown-separator {
+        font-size: 16px;
+        padding-bottom: 4px;
+        width: 100%;
+        text-align: center;
+        margin: 0 -2px;
+      }
+    }
+  }
+}
