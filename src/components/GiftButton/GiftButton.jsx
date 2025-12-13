@@ -50,7 +50,7 @@ export default function GiftButton({ onOpen }) {
               </p>
 
               <button className="btn btn-primary btn-lg btn-buy" onClick={handleBuyClick}>
-                Купить по скидке за 990 руб
+                Забрать по скидке
               </button>
 
               <p className="gift-modal-guarantee">

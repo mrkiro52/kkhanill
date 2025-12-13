@@ -33,6 +33,11 @@ $white: #ffffff;
     font-size: 16px;
   }
 
+  &.btn-md {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+
   &.btn-xl {
     padding: 20px 48px;
     font-size: 20px;
@@ -43,26 +48,28 @@ $white: #ffffff;
     background: linear-gradient(135deg, $primary-yellow 0%, #ffb300 100%);
     color: #1a1a1a;
     box-shadow: 0 8px 24px rgba(255, 200, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 32px rgba(255, 200, 0, 0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 36px rgba(255, 200, 0, 0.5);
     }
 
     &:active {
-      transform: translateY(0);
+      transform: translateY(-1px);
     }
   }
 
   &.btn-secondary {
     background: rgba(255, 200, 0, 0.1);
-    color: $primary-yellow;
+    color: #ffc800;
     border: 2px solid rgba(255, 200, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 
     &:hover {
-      background: rgba(255, 200, 0, 0.15);
-      border-color: rgba(255, 200, 0, 0.5);
-      transform: translateY(-2px);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(255, 200, 0, 0.4);
+      color: #ffc800 !important;
     }
   }
 }

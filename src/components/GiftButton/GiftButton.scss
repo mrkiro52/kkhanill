@@ -125,6 +125,10 @@ $text-secondary: #cccccc;
 
   @media (max-width: 768px) {
     max-width: 90%;
+    height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -169,9 +173,14 @@ $text-secondary: #cccccc;
   padding: 40px 30px;
   text-align: center;
   position: relative;
+  border: 1px solid rgba($yellow, 0.1);
+  border-radius: 12px;
+  background: rgba($yellow, 0.01);
 
   @media (max-width: 768px) {
-    padding: 30px 20px;
+    padding: 25px 15px;
+    overflow-y: auto;
+    flex: 1;
   }
 }
 
@@ -200,7 +209,8 @@ $text-secondary: #cccccc;
   text-shadow: 0 2px 8px rgba($yellow, 0.2);
 
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 16px;
+    margin: 0 0 15px 0;
   }
 }
 
@@ -234,6 +244,10 @@ $text-secondary: #cccccc;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;
+
+    @media (max-width: 768px) {
+      font-size: 11px;
+    }
   }
 
   .amount {
@@ -243,7 +257,7 @@ $text-secondary: #cccccc;
     font-weight: 600;
 
     @media (max-width: 768px) {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 }
@@ -252,6 +266,10 @@ $text-secondary: #cccccc;
   font-size: 28px;
   color: $yellow;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .price-new {
@@ -266,6 +284,10 @@ $text-secondary: #cccccc;
     letter-spacing: 1px;
     margin-bottom: 5px;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 11px;
+    }
   }
 
   .amount {
@@ -274,38 +296,46 @@ $text-secondary: #cccccc;
     font-weight: 700;
 
     @media (max-width: 768px) {
-      font-size: 26px;
+      font-size: 22px;
     }
   }
 }
 
-/* Текст предложения */
 .gift-modal-text {
-  color: $text-secondary;
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.6;
   margin: 20px 0;
   padding: 20px;
   background: rgba($yellow, 0.02);
-  border-left: 3px solid $yellow;
   border-radius: 8px;
 
   strong {
-    color: $yellow;
+    color: #ffffff;
     font-weight: 700;
   }
 
   .highlight {
     display: block;
-    color: $yellow;
+    color: #ffffff;
     font-weight: 600;
     margin-top: 12px;
     font-size: 17px;
   }
 
   @media (max-width: 768px) {
-    font-size: 14px;
-    padding: 15px;
+    font-size: 12px;
+    padding: 12px;
+    margin: 15px 0;
+
+    strong {
+      font-size: 12px;
+    }
+
+    .highlight {
+      font-size: 13px;
+      margin-top: 8px;
+    }
   }
 }
 
