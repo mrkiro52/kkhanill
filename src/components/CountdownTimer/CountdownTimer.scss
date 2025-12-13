@@ -89,7 +89,7 @@
   }
 }
 
-// Адаптивность для мобильных
+// Адаптивность для мобильных - всегда в ряд
 @media (max-width: 480px) {
   .countdown-timer {
     padding: 12px;
@@ -101,11 +101,12 @@
 
     .countdown-display {
       gap: 2px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: center;
 
       .countdown-unit {
         gap: 1px;
+        flex-shrink: 0;
 
         .countdown-number {
           font-size: 18px;
@@ -121,9 +122,7 @@
       .countdown-separator {
         font-size: 16px;
         padding-bottom: 4px;
-        width: 100%;
-        text-align: center;
-        margin: 0 -2px;
+        flex-shrink: 0;
       }
     }
   }

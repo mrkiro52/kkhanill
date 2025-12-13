@@ -399,7 +399,8 @@ export default function Home() {
       <section className="comparison">
         <h2>Чем отличается путь с курсом и без?</h2>
 
-        <div className="comparison-table">
+        {/* Настольная версия - одна таблица */}
+        <div className="comparison-table desktop-view">
           <div className="comparison-row">
             <div className="comparison-cell header"></div>
             <div className="comparison-cell header">Без курса 😞</div>
@@ -434,6 +435,75 @@ export default function Home() {
             <div className="comparison-cell label">Психологическая поддержка</div>
             <div className="comparison-cell">Пытаешься разобраться во всем один</div>
             <div className="comparison-cell winner">Опытный наставник + комьюнити</div>
+          </div>
+        </div>
+
+        {/* Мобильная версия - две таблицы */}
+        <div className="comparison-tables-mobile">
+          {/* Таблица 1: Столбцы 1 и 2 */}
+          <div className="comparison-table mobile-table">
+            <div className="comparison-row">
+              <div className="comparison-cell header"></div>
+              <div className="comparison-cell header">Без курса 😞</div>
+            </div>
+
+            <div className="comparison-row">
+              <div className="comparison-cell label">Время до первого заказа</div>
+              <div className="comparison-cell">3-6 месяцев</div>
+            </div>
+
+            <div className="comparison-row">
+              <div className="comparison-cell label">Количество ошибок</div>
+              <div className="comparison-cell">Десятки ошибок</div>
+            </div>
+
+            <div className="comparison-row">
+              <div className="comparison-cell label">Средний доход на старте в месяц</div>
+              <div className="comparison-cell">20к-30к</div>
+            </div>
+
+            <div className="comparison-row">
+              <div className="comparison-cell label">Упаковка портфолио</div>
+              <div className="comparison-cell">Бесконечно меняешь разные варианты</div>
+            </div>
+
+            <div className="comparison-row">
+              <div className="comparison-cell label">Психологическая поддержка</div>
+              <div className="comparison-cell">Пытаешься разобраться во всем один</div>
+            </div>
+          </div>
+
+          {/* Таблица 2: Столбцы 1 и 3 */}
+          <div className="comparison-table mobile-table">
+            <div className="comparison-row">
+              <div className="comparison-cell header"></div>
+              <div className="comparison-cell header winner">С моим курсом 🚀</div>
+            </div>
+
+            <div className="comparison-row">
+              <div className="comparison-cell label">Время до первого заказа</div>
+              <div className="comparison-cell winner">2-4 недели</div>
+            </div>
+
+            <div className="comparison-row">
+              <div className="comparison-cell label">Количество ошибок</div>
+              <div className="comparison-cell winner">Избежишь их все</div>
+            </div>
+
+            <div className="comparison-row">
+              <div className="comparison-cell label">Средний доход на старте в месяц</div>
+              <div className="comparison-cell winner">Реальный выход на 100к+</div>
+            </div>
+
+            <div className="comparison-row">
+              <div className="comparison-cell label">Упаковка портфолио</div>
+              <div className="comparison-cell winner">Готовые рабочие шаблоны</div>
+            </div>
+
+            <div className="comparison-row">
+              <div className="comparison-cell label">Психологическая поддержка</div>
+              <div className="comparison-cell winner">Опытный наставник + комьюнити</div>
+            </div>
           </div>
         </div>
       </section>

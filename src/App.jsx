@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Politics from "./pages/Politics/Politics";
 import Offerta from "./pages/Offerta/Offerta";
@@ -10,7 +10,7 @@ import './fonts.css';
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes> 
         <Route path="/" element={<Home />} />
         <Route path="/course" element={<CourseContent />} />
@@ -20,6 +20,6 @@ export default function App() {
         <Route path="/success" element={<Success />} />
         <Route path="/fail" element={<Fail />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }

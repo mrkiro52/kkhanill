@@ -249,7 +249,7 @@ section {
   justify-content: center;
 
   @media (max-width: 768px) {
-    height: 300px;
+    display: none;
   }
 }
 
@@ -978,6 +978,11 @@ section {
   max-width: 1200px;
   text-align: center;
 
+  @media (max-width: 1200px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   @media (max-width: 768px) {
     padding: 40px 20px;
     margin: 30px auto;
@@ -1022,6 +1027,30 @@ section {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+// Скрываем настольную версию на мобилке
+@media (max-width: 768px) {
+  .comparison-table.desktop-view {
+    display: none;
+  }
+
+  .comparison-tables-mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    .mobile-table {
+      width: 100%;
+    }
+  }
+}
+
+// Показываем настольную версию на больших экранах
+@media (min-width: 769px) {
+  .comparison-tables-mobile {
+    display: none;
+  }
 }
 
 .comparison-row {

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Presale.scss";
 import CountdownTimer from "../../components/CountdownTimer/CountdownTimer";
+import API_ENDPOINTS from "../../config/api";
 
-const GOOGLE_SHEET_URL = "https://kkhanill-backend.vercel.app/api/presale-signup";
+const GOOGLE_SHEET_URL = API_ENDPOINTS.PRESALE_SIGNUP;
 
 export default function Presale() {
   const navigate = useNavigate();
@@ -38,6 +39,7 @@ export default function Presale() {
 
     try {
       const response = await fetch(GOOGLE_SHEET_URL, {
+        mode: 'no-cors',
         method: "POST",
         headers: {
           "Content-Type": "application/json",

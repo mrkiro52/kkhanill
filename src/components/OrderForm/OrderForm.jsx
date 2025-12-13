@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './OrderForm.scss';
+import API_ENDPOINTS from '../../config/api';
 
 export default function OrderForm({ isOpen, onClose }) {
   const [formData, setFormData] = useState({
@@ -54,27 +55,23 @@ export default function OrderForm({ isOpen, onClose }) {
     try {
       console.log('📝 Форма отправлена:', formData);
       
-      const amount = 990; // 990 рублей
-      const orderId = `order_${Date.now()}`;
-      const successUrl = `${window.location.origin}/#/success?orderId=${orderId}`;
-      const failUrl = `${window.location.origin}/#/fail?orderId=${orderId}`;
-      
+      const payload = {
+        orderId: `order_${Date.now()}`,
+        email: formData.email,
+        phone: formData.phone,
+      };
+
       console.log('💳 Инициирование платежа:');
-      console.log('   Amount:', amount);
-      console.log('   OrderId:', orderId);
-      console.log('   SuccessURL:', successUrl);
-      console.log('   FailURL:', failUrl);
+      console.log('📤 POST /api/tbank/init-payment');
+      console.log('� Payload (тело запроса):', JSON.stringify(payload, null, 2));
       
       // Отправляем данные на наш бэкенд для инициирования платежа
-      const response = await fetch('https://express-kkhanill.vercel.app/api/tbank/init-payment', {
+      const response = await fetch(API_ENDPOINTS.INIT_PAYMENT, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          amount: amount,
-          orderId: orderId,
-        })
+        body: JSON.stringify(payload)
       });
 
       const result = await response.json();
