@@ -23,6 +23,12 @@
     }
   }
 
+  @media (max-width: 768px) {
+    padding: 0;
+    align-items: flex-end;
+  }
+}
+
 .order-form-container {
   background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
   border-radius: 20px;
@@ -61,12 +67,6 @@
     }
     -ms-overflow-style: none;
     scrollbar-width: none;
-  }
-} }
-
-  @media (max-width: 768px) {
-    padding: 30px 20px;
-    border-radius: 16px;
   }
 }
 
