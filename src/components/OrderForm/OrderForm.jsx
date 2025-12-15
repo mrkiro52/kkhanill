@@ -117,7 +117,7 @@ export default function OrderForm({ isOpen, onClose }) {
               <p>Заполни форму и получи моментальный доступ</p>
               
               <div className="form-timer">
-                <p className="timer-label">Цена станет 4990 руб через</p>
+                <p className="timer-label">Цена станет 4990 руб 01.01.2026</p>
                 <div className="timer-display">
                   <span>{String(timeLeft.days).padStart(2, '0')}д</span>
                   <span>{String(timeLeft.hours).padStart(2, '0')}ч</span>
